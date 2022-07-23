@@ -1,0 +1,156 @@
+/* importing goggle font to be use in the form */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+
+/* This takes Effect on all Elements in the document */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the background color of the body section to grey
+And using the imported google font in the body section  */
+body{
+    background-color: #333;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Making the form form_div_container responsive */
+.form_div_container{
+    width:1200px;
+    max-width: 100%;
+    min-height: 800px;
+    margin:0 auto;
+}
+
+/* Styling the form_container to responsively align at the center of my form_div_container */
+.form_container{
+/*     background-color: bisque; */
+    width:60%;
+    height: 100%;
+    margin: 0 auto;
+    border:1px solid black;
+    background-image: url(mobileRecharge.jpg); 
+
+}
+
+/* Making the input element flexible */
+.form_group{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
+/* Effect takes place on all the input fields in the form */
+input{
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 10px 25px;
+}
+
+/* Effect takes place on only the input button in the form  */
+/* input[type="button"]{
+    margin-top: 25px;
+    background-color: rgb(70, 31, 3);
+    color:white;
+    border:none;
+    border-radius: 0px;
+} */
+
+/* When hovering on the input button */
+/* input[type="button"]:hover{
+    background-color: rgb(71, 3, 3);
+    transition: 0.4s;
+} */
+
+/* setting some space on the bottom of the label element */
+label{
+    margin-bottom: 5px;
+  color:purple;
+/*   font-size: 25px; */
+}
+
+/* styling the head element */
+h2{
+    margin:15px;
+    text-align: center;
+    color: red;
+}
+
+
+input::placeholder{
+    font-size: medium;
+    font-family: cursive;
+}
+.autocomplete {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+
+#entertext{
+  color:red;
+}
+.myText, .thanks{
+  color:green;
+}
+
+  /* Hidding the display of my mtn network logo */
+  .myText{
+    display:none;
+  }
+.mtn{
+    display:none;
+    
+}
+
+/* Hidding the display of my airtel network logo */
+.airtel{
+    display:none;
+}
+
+/* Hidding the display of my glo network logo */
+.glo{
+    display:none;
+}
+
+/* Hidding the display of my etisalat newtwork logo */
+.etisalat{
+    display:none;
+}
+
+/* Defining a class that reveals the visibility of my networks logo */
+.expose{
+    display:block;
+}

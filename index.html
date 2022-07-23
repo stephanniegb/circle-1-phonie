@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name of chosen challenge</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+
+ <div class="form_div_container">
+            <form class="form_container" onsubmit="return false;">
+               
+                <div class="form_group">
+                  <br><br><br><br>
+                    <label for="first_name">Recharge your phone</label>
+                    <select id="myselect" style="width:50%;margin-bottom: 20px;">
+                        <option>select amount to recharge</option>
+                        <option>#100</option>
+                        <option>#200</option>
+                        <option>#300</option>
+                        <option>#400</option>
+                        <option>#500</option>
+                        <option>#600</option>
+                        <option>#700</option>
+                        <option>#800</option>
+                        <option>#900</option>
+                        <option>#1000</option>
+                    </select>
+                  
+                 <h2 id="entertext"></h2>
+                </div>
+    
+                <div class="autocomplete">
+                <div class="form_group">
+                <label for="Phone-number"> Enter Phone Number to Recharge</label>
+                <input type="text" id="myInput" class="word"  placeholder="Phone-number"  required>
+                </div>
+                </div>
+                <p>
+            <img class="mtn" src="./mtn.png" width="25%" height="25%">
+            <img class="airtel" src="./Airtel.jpg" width="25%" height="25%">
+            <img class="glo" src="./glo.png" width="25%" height="25%">
+            <img class="etisalat" src="./etisalat.png" width="25%" height="25%">
+        </p><br>
+        <p class="myText">You are Recharging <span class="myspan"></span> click Ok to continue <button id="text">Ok</button></p>
+        <br>
+        <p class="thanks"></p>
+    </form>
+        
+        </div>
+  
+       
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
