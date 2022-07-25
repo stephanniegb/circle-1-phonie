@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lobster&family=Macondo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;600&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  padding: 50px 60px;
+}
+.banner {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  background-color: #272727;
+  max-height: 1440px;
+}
+.nav_intro {
+  flex-basis: 50%;
+}
+
+.navigation {
+  padding: 30px 0;
+}
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fafafa;
+}
+
+.intro {
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start
+}
+.main_intro {
+  font-size: 65px;
+}
+.sub_intro {
+  padding: 30px 0;
+  font-size: 20px;
+  text-align: left;
+  line-height: 2.2rem;
+  margin-bottom: 15px;
+}
+.cta_btn {
+  background-color: #00866b;
+  color: #fafafa;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.cta_btn:hover,
+.form_btn:hover {
+  background-color: #008b8b;
+  color: #ffffff;
+  transition: ease-in-out 0.3ms;
+}
+.index_img {
+  flex-basis: 50%;
+}
+.phone_image {
+  width: 750px;
+  height:100vh;
+}
+
+/* form styles */
+.form-container,
+.dashboard_container {
+  margin: 50px auto;
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+.form {
+  color: #434a54;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.form-header {
+  text-align: center;
+  padding-top: 50px;
+}
+.form-header h1 {
+  color: #272727af;
+  margin-bottom: 10px;
+}
+.header-sub {
+  color: #b2b2be;
+  margin-bottom: 10px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group-label {
+  margin: 20px 0;
+}
+.register-input {
+  border: none;
+  border-bottom: 2px solid #555;
+  width: 100%;
+}
+
+.register-input:focus {
+  outline: none;
+}
+
+.forgot_password {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.password-reset {
+  color: #008b8b;
+  margin-bottom: 20px;
+}
+.form_btn {
+  background-color: #00866b;
+  color: #fafafa;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+/* dashboard styles */
+.dashboard {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  height: auto;
+  border: 2px solid #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.greeting {
+  margin-left: 20px;
+  color:#272727af;
+}
+
+.wallet {
+  height: 150px;
+  width: 300px;
+  background-color: #00866b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.wallet_balance {
+  font-size: 15px;
+  font-weight: bold;
+  color: #434a54;
+  margin-bottom: 5px;
+}
+.wallet_balance-amount {
+  color: #fafafa;
+}
+#form_1 {
+  width: 300px;
+  margin: 0 auto;
+}
+#number-div {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#amount-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.icon-img {
+  width: 25px;
+  position: absolute;
+  right: 3%;
+  top: 45%;
+  border-radius: 5px;
+}
+#tel-input {
+  padding: 7px;
+  border-radius: 5px;
+}
+#amount {
+  border-radius: 5px;
+  padding: 7px;
+}
+.error_msg {
+  color: red;
+}
+#telcom-image {
+  visibility: hidden;
+}
+/* responsive styles */
+
