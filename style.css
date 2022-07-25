@@ -1,156 +1,211 @@
-/* importing goggle font to be use in the form */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
-
-/* This takes Effect on all Elements in the document */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lobster&family=Macondo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;600&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  padding: 50px 60px;
+}
+.banner {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  background-color: #272727;
+  max-height: 1440px;
+}
+.nav_intro {
+  flex-basis: 50%;
 }
 
-/* Setting the background color of the body section to grey
-And using the imported google font in the body section  */
-body{
-    background-color: #333;
-    font-family: 'Open Sans', sans-serif;
-
+.navigation {
+  padding: 30px 0;
+}
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fafafa;
 }
 
-/* Making the form form_div_container responsive */
-.form_div_container{
-    width:1200px;
-    max-width: 100%;
-    min-height: 800px;
-    margin:0 auto;
+.intro {
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start
+}
+.main_intro {
+  font-size: 65px;
+}
+.sub_intro {
+  padding: 30px 0;
+  font-size: 20px;
+  text-align: left;
+  line-height: 2.2rem;
+  margin-bottom: 15px;
+}
+.cta_btn {
+  background-color: #00866b;
+  color: #fafafa;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.cta_btn:hover,
+.form_btn:hover {
+  background-color: #008b8b;
+  color: #ffffff;
+  transition: ease-in-out 0.3ms;
+}
+.index_img {
+  flex-basis: 50%;
+}
+.phone_image {
+  width: 750px;
+  height:100vh;
 }
 
-/* Styling the form_container to responsively align at the center of my form_div_container */
-.form_container{
-/*     background-color: bisque; */
-    width:60%;
-    height: 100%;
-    margin: 0 auto;
-    border:1px solid black;
-    background-image: url(mobileRecharge.jpg); 
-
+/* form styles */
+.form-container,
+.dashboard_container {
+  margin: 50px auto;
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+.form {
+  color: #434a54;
+  width: 25%;
+  margin: 0 auto;
 }
 
-/* Making the input element flexible */
-.form_group{
-    display:flex;
-    flex-direction: column;
-    width:100%;
+.form-header {
+  text-align: center;
+  padding-top: 50px;
+}
+.form-header h1 {
+  color: #272727af;
+  margin-bottom: 10px;
+}
+.header-sub {
+  color: #b2b2be;
+  margin-bottom: 10px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-/* Effect takes place on all the input fields in the form */
-input{
-    border-radius: 10px;
-    margin-bottom: 5px;
-    padding: 10px 25px;
+.form-group-label {
+  margin: 20px 0;
+}
+.register-input {
+  border: none;
+  border-bottom: 2px solid #555;
+  width: 100%;
 }
 
-/* Effect takes place on only the input button in the form  */
-/* input[type="button"]{
-    margin-top: 25px;
-    background-color: rgb(70, 31, 3);
-    color:white;
-    border:none;
-    border-radius: 0px;
-} */
-
-/* When hovering on the input button */
-/* input[type="button"]:hover{
-    background-color: rgb(71, 3, 3);
-    transition: 0.4s;
-} */
-
-/* setting some space on the bottom of the label element */
-label{
-    margin-bottom: 5px;
-  color:purple;
-/*   font-size: 25px; */
+.register-input:focus {
+  outline: none;
 }
 
-/* styling the head element */
-h2{
-    margin:15px;
-    text-align: center;
-    color: red;
+.forgot_password {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.password-reset {
+  color: #008b8b;
+  margin-bottom: 20px;
+}
+.form_btn {
+  background-color: #00866b;
+  color: #fafafa;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+/* dashboard styles */
+.dashboard {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  height: auto;
+  border: 2px solid #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-
-input::placeholder{
-    font-size: medium;
-    font-family: cursive;
-}
-.autocomplete {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-  }
-
-  .autocomplete-items {
-    position: absolute;
-    border: 1px solid #d4d4d4;
-    border-bottom: none;
-    border-top: none;
-    z-index: 99;
-    /*position the autocomplete items to be the same width as the container:*/
-    top: 100%;
-    left: 0;
-    right: 0;
-  }
-  
-  .autocomplete-items div {
-    padding: 10px;
-    cursor: pointer;
-    background-color: #fff; 
-    border-bottom: 1px solid #d4d4d4; 
-  }
-  
-  /*when hovering an item:*/
-  .autocomplete-items div:hover {
-    background-color: #e9e9e9; 
-  }
-  
-  /*when navigating through the items using the arrow keys:*/
-  .autocomplete-active {
-    background-color: DodgerBlue !important; 
-    color: #ffffff; 
-  }
-
-#entertext{
-  color:red;
-}
-.myText, .thanks{
-  color:green;
+.greeting {
+  margin-left: 20px;
+  color:#272727af;
 }
 
-  /* Hidding the display of my mtn network logo */
-  .myText{
-    display:none;
-  }
-.mtn{
-    display:none;
-    
+.wallet {
+  height: 150px;
+  width: 300px;
+  background-color: #00866b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.wallet_balance {
+  font-size: 15px;
+  font-weight: bold;
+  color: #434a54;
+  margin-bottom: 5px;
+}
+.wallet_balance-amount {
+  color: #fafafa;
+}
+#form_1 {
+  width: 300px;
+  margin: 0 auto;
+}
+#number-div {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#amount-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
 }
 
-/* Hidding the display of my airtel network logo */
-.airtel{
-    display:none;
+.icon-img {
+  width: 25px;
+  position: absolute;
+  right: 3%;
+  top: 45%;
+  border-radius: 5px;
 }
+#tel-input {
+  padding: 7px;
+  border-radius: 5px;
+}
+#amount {
+  border-radius: 5px;
+  padding: 7px;
+}
+.error_msg {
+  color: red;
+}
+#telcom-image {
+  visibility: hidden;
+}
+/* responsive styles */
 
-/* Hidding the display of my glo network logo */
-.glo{
-    display:none;
-}
-
-/* Hidding the display of my etisalat newtwork logo */
-.etisalat{
-    display:none;
-}
-
-/* Defining a class that reveals the visibility of my networks logo */
-.expose{
-    display:block;
-}
