@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="dashboard_container">
+      <div class="dashboard">
+        <h3 class="greeting">Buy Airtime</h3>
+        <div class="wallet">
+          <p class="wallet_balance">Wallet Balance</p>
+          <h2 class="wallet_balance-amount">&#8358;5,680.29</h2>
+        </div>
+        <form id="form_1">
+          <div id="amount-div">
+            <label for="amount">Amount</label>
+            <input
+              id="amount"
+              type= "tel"
+              placeholder="&#8358;0.00"
+              name="phn-no"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div id="number-div">
+            <label for="tel-input">Phone Number</label>
+            <input
+              id="tel-input"
+              type="tel"
+              pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,7}$"
+              placeholder="0809 365 0288"
+              name="phn-no"
+              autocomplete="off"
+              required
+            />
+            <img
+              class="icon-img"
+              src=""
+              alt="mtn icon"
+              id="telcom-image"
+            />
+          </div>
+          <small class="error_msg"></small> <br />
+          <button type="submit" class="form_btn">Buy</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
