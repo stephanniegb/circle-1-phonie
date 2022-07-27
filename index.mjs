@@ -1,3 +1,3 @@
 import startApp from './app.mjs';
-
-document.addEventListener('DOMContentLoaded', startApp); 
+console.log(document.getElementById("tel-input"))
+document.addEventListener('DOMContentLoaded', startApp);
