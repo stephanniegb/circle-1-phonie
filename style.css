@@ -1,30 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lobster&family=Macondo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;600&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700&family=Satisfy&display=swap");
 
-* {
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+.container {
+  padding: 4rem;
+}
+body{
   margin: 0;
   padding: 0;
+  height:auto;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
-.container {
-  padding: 50px 60px;
+.intro-page{
+  background: linear-gradient(90deg, rgba(39, 39, 39, 1) 20%, rgba(0, 134, 107, 1) 80%); 
+  background-repeat:no-repeat;
+  background-size:cover;
 }
-
-.banner {
-  min-height: 100vh;
-  display: flex;
-  width: 100%;
-  background-color: #272727;
-  height: 1440px;
-}
-
-.nav_intro {
-  flex-basis: 50%;
-}
-
-.navigation {
-  padding: 30px 0;
+a{
+  text-decoration:none;
 }
 
 .logo {
@@ -35,52 +31,47 @@
 
 .intro {
   color: #fafafa;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start
+  align-items: start;
+  font-size: 1rem;
 }
+.intro h1{
+  font-size: 3rem;
 
-.main_intro {
-  font-size: 65px;
 }
 
 .sub_intro {
-  padding: 30px 0;
-  font-size: 20px;
   text-align: left;
   line-height: 2.2rem;
   margin-bottom: 15px;
 }
 
-.cta_btn {
+#cta_btn {
   background-color: #00866b;
-  color: #fafafa;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
   border: none;
-  padding: 15px 50px;
+  padding: 1.5rem 2rem;
   border-radius: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
   margin-top: 20px;
 }
+#cta_btn a{
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: font-size 2s;
+}
 
-.cta_btn:hover,
+#cta_btn:hover,
 .form_btn:hover {
   background-color: #008b8b;
-  color: #ffffff;
-  transition: ease-in-out 0.3ms;
+  font-size: 1.2rem;
 }
 
-.index_img {
-  flex-basis: 50%;
+#index_img {
+  display: none;
 }
-
-.phone_image {
-  width: 750px;
-  height: 100vh;
-}
-
 /* form styles */
 .form-container,
 .dashboard_container {
@@ -145,13 +136,21 @@
 
 .form_btn {
   background-color: #00866b;
-  color: #fafafa;
   border: none;
+  color: #fafafa;
+  font-size: 1rem;
   padding: 15px 50px;
   border-radius: 10px;
-  font-size: 16px;
   font-weight: bold;
-  width: 100%;
+  width:100%
+  
+}
+#form-anchor{
+/*   text-align:center; */
+  color: #fafafa;
+  font-size: 1rem;
+  display:inline-block;
+  width:100%;
 }
 
 /* dashboard styles */
@@ -162,7 +161,7 @@
   height: auto;
   border: 2px solid #fafafa;
   border-radius: 10px;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0.325rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .greeting {
@@ -237,5 +236,57 @@
 #telcom-image {
   visibility: hidden;
 }
+.autocomplete {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  margin-bottom: 20px;
+  }
 
-/* responsive styles */
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+
+  /*responsive styles*/
+@media(min-width:1024px){
+  .intro-page {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  .intro h1 {
+     font-size: 3rem;
+  }
+  .phone_image{
+    width: 100%;
+    height:auto;
+  }
+  #index_img {
+  display: block;
+} 
+    
